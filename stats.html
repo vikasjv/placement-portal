@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+     <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+     <!-- MORRIS CHART STYLES-->
+    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+        <!-- CUSTOM STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+     <!-- GOOGLE FONTS-->
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="img/wpf-favicon.png"/>
+
+    <!-- CSS
+    ================================================== -->       
+    <!-- Bootstrap css file-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font awesome css file-->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Superslide css file-->
+    <link rel="stylesheet" href="css/superslides.css">
+    <!-- Slick slider css file -->
+    <link href="css/slick.css" rel="stylesheet"> 
+    <!-- Circle counter cdn css file -->
+    <link rel='stylesheet prefetch' href='https://cdn.rawgit.com/pguso/jquery-plugin-circliful/master/css/jquery.circliful.css'>  
+    <!-- smooth animate css file -->
+    <link rel="stylesheet" href="css/animate.css"> 
+    <!-- preloader -->
+    <link rel="stylesheet" href="css/queryLoader.css" type="text/css" />
+    <!-- gallery slider css -->
+    <link type="text/css" media="all" rel="stylesheet" href="css/jquery.tosrus.all.css" />    
+    <!-- Default Theme css file -->
+    <link id="switcher" href="css/themes/default-theme.css" rel="stylesheet">
+    <!-- Main structure css file -->
+    <link href="style.css" rel="stylesheet">
+   
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>   
+    <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>    
+
+</head>
+<body>
+
+     <!--=========== BEGIN HEADER SECTION ================-->
+    <header id="header">
+      <!-- BEGIN MENU -->
+      <div class="menu_area">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">  <div class="container">
+            <div class="navbar-header">
+              <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <!-- LOGO -->
+              <!-- TEXT BASED LOGO -->
+              <a class="navbar-brand" href="index.html">RVCE <span>MCA </span>PLACEMENT PORTAL</a>              
+              <!-- IMG BASED LOGO  -->
+               <!-- <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"></a>  -->            
+                     
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                  <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Placements<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="stats.html">Statistics</a></li>               
+                  </ul>
+                </li> 
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Login<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="slogin.html">Student Login</a></li> 
+                    <li><a href="clogin.html">Admin Login</a></li>              
+                  </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="contact.php">Contact</a></li>
+              </ul>           
+            </div><!--/.nav-collapse -->
+          </div>     
+        </nav>  
+      </div>
+      <!-- END MENU -->    
+    </header>
+  
+      <br><br><br><br><br><br>
+
+       
+            <div id="page-inner">
+                
+                 <!-- /. ROW  -->
+                 <hr />
+             
+                <div class="row"> 
+                    
+                      
+                               <div class="col-md-6 col-sm-12 col-xs-12">                     
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Year wise Statistics
+                        </div>
+                        <div class="panel-body">
+                            <div id="morris-bar-chart"></div>
+                        </div>
+                    </div>            
+                </div>
+                      <div class="col-md-6 col-sm-12 col-xs-12">                     
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Companies package Statistics
+                        </div>
+                        <div class="panel-body">
+                            <div id="morris-area-chart"></div>
+                        </div>
+                    </div>            
+                </div> 
+                
+           </div>
+                 <!-- /. ROW  -->
+                <div class="row">                     
+                      
+                               <div class="col-md-6 col-sm-12 col-xs-12">                     
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Department wise Statistics
+                        </div>
+                        <div class="panel-body">
+                            <div id="morris-donut-chart"></div>
+                        </div>
+                    </div>            
+                </div>
+                      <div class="col-md-6 col-sm-12 col-xs-12">                     
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Full Time and Part Time Statistics
+                        </div>
+                        <div class="panel-body">
+                            <div id="morris-line-chart"></div>
+                        </div>
+                    </div>            
+                </div> 
+                
+           </div>
+                 <!-- /. ROW  -->
+    </div>
+        </div>     <!-- /. PAGE INNER  -->
+            </div>
+         <!-- /. PAGE WRAPPER  -->
+        </div>
+
+     <!-- /. WRAPPER  -->
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+
+    <script src="assets/js/jquery-1.10.2.js"></script>
+
+      <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- METISMENU SCRIPTS -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+     <!-- MORRIS CHART SCRIPTS -->
+     <script src="assets/js/morris/raphael-2.1.0.min.js"></script>
+    <script src="assets/js/morris/morris.js"></script>
+      <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+    <script src="js/slick.min.js"></script>
+        <script src="js/wow.min.js"></script>  
+
+
+    
+   
+</body>
+</html>
